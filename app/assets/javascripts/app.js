@@ -8,7 +8,8 @@ var flapperNews = angular.module('flapperNews', [
 flapperNews.config([
     '$stateProvider',
     '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider) {
+    '$locationProvider',
+    function($stateProvider, $urlRouterProvider, $locationProvider) {
 
         $stateProvider
             .state('home', {
@@ -31,6 +32,26 @@ flapperNews.config([
                     }]
                 }
             })
+            // .state('login', {
+            //     url: '/login',
+            //     templateUrl: 'auth/_login.html',
+            //     controller: 'AuthCtrl',
+            //     onEnter: ['$state', 'Auth', function($state, Auth) {
+            //         Auth.currentUser().then(function() {
+            //             $state.go('home');
+            //         })
+            //     }]
+            // })
+            // .state('register'ontroller
+            //     url: '/register',
+            //     templateUrl: 'auth/_register.html',
+            //     controller: 'AuthCtrl',
+            //     onEnter: ['$state', 'Auth', function($state, Auth) {
+            //         Auth.currentUser().then(function() {
+            //             $state.go('home');
+            //         })
+            //     }]
+            // });
 
         $urlRouterProvider.otherwise('home');
     }
