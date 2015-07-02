@@ -10,6 +10,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'puma'
 gem 'angular-rails-templates'
 gem 'sprockets', '2.12.3'
+gem 'responders'
+gem 'angular_rails_csrf'
 
 group :development, :test do
 	gem 'byebug'
