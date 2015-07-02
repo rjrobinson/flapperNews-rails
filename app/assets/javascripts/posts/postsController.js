@@ -24,7 +24,5 @@ flapperNews.controller('PostsController', [
         $scope.incrementUpvotes = function(comment) {
             posts.upvoteComment(post, comment);
         };
-
-
     }
 ]);
