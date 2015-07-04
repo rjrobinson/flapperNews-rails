@@ -1,4 +1,4 @@
-app.controller('NavController', [
+flapperNews.controller('NavController', [
     '$scope',
     'Auth',
     function($scope, Auth) {
