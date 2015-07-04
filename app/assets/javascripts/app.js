@@ -11,6 +11,8 @@ flapperNews.config([
     '$locationProvider',
     function($stateProvider, $urlRouterProvider, $locationProvider) {
 
+
+
         $stateProvider
             .state('home', {
                 url: '/home',
