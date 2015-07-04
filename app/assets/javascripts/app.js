@@ -1,6 +1,7 @@
 var flapperNews = angular.module('flapperNews', [
     'templates',
-    'ui.router'
+    'ui.router',
+    'Devise'
 ]);
 
 ////////////////////

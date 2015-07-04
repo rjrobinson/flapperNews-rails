@@ -1,0 +1,17 @@
+<div class="collapse navbar-collapse pull-right" ng-COntroller='NavController'>
+    <ul class="nav navbar-nav">
+        <li><a href="#/home">Home</a></li>
+        <li ng-hide="singedIn()">
+            <a href="#/login">Log In</a>
+        </li>
+        <li ng-hide="singedIn()">
+            <a href="#/register">Register</a>
+        </li>
+        <li ng-hide="singedIn()">
+            <a href="#/">{{ user.username}}</a>
+        </li>
+        <li ng-hide="singedIn()">
+            <a ng-click="logout()">Log Out</a>
+        </li>
+    </ul>
+</div>
