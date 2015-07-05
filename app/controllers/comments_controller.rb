@@ -17,6 +17,9 @@ class CommentsController < ApplicationController
 		respond_with post, comment
 	end
 
+	def downvote
+	end
+
 
 	def comment_params
 		params.require(:comment).permit(:body)
